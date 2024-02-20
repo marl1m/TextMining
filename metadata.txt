@@ -1,0 +1,9 @@
+METADATA
+● id: Unique identifier
+● title: Song Title
+● artist: The main artist of the song
+● year: Year the song was launched in
+● views: Number of views the song has on an online music service
+● features: Includes names of collaborating artists, empty otherwise
+● lyrics: The lyrics of the song; Includes tags for specific sections (e.g. Introduction, Chorus)
+● tag: The main musical genre of the song [TARGET]
