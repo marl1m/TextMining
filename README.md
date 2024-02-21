@@ -10,6 +10,7 @@ In the this project, our objective is to harness the power of text mining techni
 1. Genre Identification:
 - Build a classification model to predict the genre of a song based on its lyrics.
 - Utilize machine learning techniques and a dataset containing song lyrics and corresponding genres.
+- Evaluate and optimize model performance through a [Kaggle competition](https://www.kaggle.com/competitions/decoding-emotion-from-music), aiming to achieve the highest accuracy in genre identification.
 
 2. Sentiment Analysis:
 - Explore emotional undertones within song lyrics to decipher the emotional essence of each genre.
@@ -19,7 +20,9 @@ In the this project, our objective is to harness the power of text mining techni
 #### Data Description
 The [Genius Lyrics Dataset](https://www.kaggle.com/datasets/carlosgdcj/genius-song-lyrics-with-language-information/data) contains public user and song information from the music lyric annotation website [genius](https://genius.com/). It includes the basic information about a song: title, artists, lyrics and genre.
 
-The original dataset has a total of 5 million songs. However, in this project, less than 5% were used.
+##### Notes:
+- The original dataset has a total of 5 million songs. However, in this project, less than 5% were used.
+- The data was divided a priori in two csv files: train and test datasets.
 ##
 
 ### Repository Description
@@ -31,8 +34,30 @@ This repository contains all the files created during the development of our pro
 - [README](README.md): (this) file that contains the project and the repository descriptions.
 ##
 
+### Possible Improvements
+While the project successfully demonstrated the capability to predict song genres using natural language processing and machine learning techniques, there are several areas for potential improvement and future exploration:
+
+1.  Expansion of Musical Genres:
+- The current study focused on seven musical genres, but acknowledging that the actual number of genres exceeds 41 categories, with further subdivision into more than 300 subcategories, a more extensive dataset with additional genre tags could lead to a more comprehensive analysis and increased value.
+
+2. Inclusion of Non-English Songs:
+- A more detailed analysis could be conducted to handle songs in other non-English languages. While translating lyrics is an option, it's essential to recognize the limitations of automatic translation tools.
+
+3. Exploration of Textual Features:
+- Testing the inclusion of remaining textual features from the dataset, such as the song artist's name, could provide insights. However, this should be approached cautiously due to the potential increase in dimensionality and noise in artist representation.
+
+4. XGBoost Classifier Optimization:
+- Further exploration and optimization of the xgboost classifier could be valuable. Despite its promising results, overfitting led to its elimination. Extensive testing of parameter combinations may mitigate overfitting, but computational constraints limited the exploration.
+
+5. Nuanced Approaches to Sentiment Analysis:
+- Consideration of more nuanced approaches to sentiment analysis, including the inclusion of additional song information or exploration of different lexicons, could enhance the understanding of emotional nuances in lyrics. This avenue may provide deeper insights into the emotional tones connected to each genre.
+
+6. Refinement of Log Ratio Analysis:
+- In the current project, log ratio analysis was employed to select the most relevant words considering the genres, using the total number of words as the denominator. However, there is a potential improvement in using the total number of observations (songs) as the denominator instead. This adjustment would better account for cases where a word is repeated excessively in one song's lyrics but minimally in the remaining dataset. By normalizing with the total number of observations, the log ratio analysis could offer a more accurate reflection of a word's relevance across the entire dataset, potentially enhancing the selection of meaningful features. Further exploration of this alternative denominator could refine the feature selection process.
+##
+
 ### Project Developed by:
-- Afonso Cadete | https://www.linkedin.com/in/afonso-roque-cadete/
-- Bruna Faria | https://www.linkedin.com/in/brunafdfaria/
-- Inês Vieira | https://www.linkedin.com/in/inesarvieira/
-- Rita Centeno | https://www.linkedin.com/in/rita-centeno/
+- [Afonso Cadete](https://www.linkedin.com/in/afonso-roque-cadete/)
+- [Bruna Faria](https://www.linkedin.com/in/brunafdfaria/)
+- [Inês Vieira](https://www.linkedin.com/in/inesarvieira/)
+- [Rita Centeno](https://www.linkedin.com/in/rita-centeno/)
