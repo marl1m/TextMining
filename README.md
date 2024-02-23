@@ -1,4 +1,4 @@
-# Decoding the Rhythmsof Emotion: Asentimental Journeythrough Music Genres
+# Decoding the Rhythms of Emotion: Asentimental Journey through Music Genres
 ##### Text Mining - Data Science Degree - NOVA IMS
 
 ##
