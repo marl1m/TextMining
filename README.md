@@ -55,9 +55,3 @@ While the project successfully demonstrated the capability to predict song genre
 6. Refinement of Log Ratio Analysis:
 - In the current project, log ratio analysis was employed to select the most relevant words considering the genres, using the total number of words as the denominator. However, there is a potential improvement in using the total number of observations (songs) as the denominator instead. This adjustment would better account for cases where a word is repeated excessively in one song's lyrics but minimally in the remaining dataset. By normalizing with the total number of observations, the log ratio analysis could offer a more accurate reflection of a word's relevance across the entire dataset, potentially enhancing the selection of meaningful features. Further exploration of this alternative denominator could refine the feature selection process.
 ##
-
-### Project Developed by:
-- [Afonso Cadete](https://www.linkedin.com/in/afonso-roque-cadete/)
-- [Bruna Faria](https://www.linkedin.com/in/brunafdfaria/)
-- [Inês Vieira](https://www.linkedin.com/in/inesarvieira/)
-- [Rita Centeno](https://www.linkedin.com/in/rita-centeno/)
